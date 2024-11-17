@@ -1,0 +1,5 @@
+{
+    "visualizer": "C:\\Program Files\\Graphviz\\bin\\dot.exe",
+    "package": "https://pkgs.alpinelinux.org/package/edge/main/x86_64/busybox-binsh",
+    "result": "C:\\Users\\Inter\\Desktop\\result.dot"
+}
