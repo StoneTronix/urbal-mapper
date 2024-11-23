@@ -16,7 +16,7 @@ class Visualizator:
     visualizer = ''
     package = ''
     result = ''
-    debug_mode = False
+    debug_mode = True
 
     def log(self, message: object):
         if self.debug_mode:
@@ -96,7 +96,7 @@ class Visualizator:
         for i in deps:
             if len(deps[i]) != 0:
                 for j in deps.get(i):
-                    graph.insert(len(deps) - 2, f'\t"{i}" -> "{j}"')
+                    graph.insert(len(graph) - 1, f'\t"{i}" -> "{j}"')
 
         try:
             result_file = open(self.result, 'w')
